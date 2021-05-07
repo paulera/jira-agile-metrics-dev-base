@@ -71,7 +71,7 @@ code as password.
 
 # Running and debugging
 
-Make sure the virtualenv is activated before running the project;
+Make sure the virtualenv is activated before running the project
 ```sh
 source ./venv/bin/activate
 ```
@@ -84,6 +84,12 @@ Some examples of how you can run the project from the terminal:
 ```
 
 This project contains a `.vscode` folder with launch and project settings, which means
-that if you use vscode and installed `venv` properly, you can launch the session
-*Run config/test.yml* and start debugging right away.
+that if you use vscode and installed `venv` properly, you can place breakpoints, launch
+the session **Run config/test.yml** and start debugging right away.
+
+For the first time debugging, these interesting locations for a breakpoint, to help
+understanding the main flow of the application:
+* *jira-agile-metrics/jira_agile_metrics/cli.py* - function `main`
+* *jira-agile-metrics/jira_agile_metrics/calculator.py* - function `run_calculators`
+* For any calculator of your interest inside *jira-agile-metrics/jira_agile_metrics/calculators* - functions `run` and `write`
 
