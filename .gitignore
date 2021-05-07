@@ -1,0 +1,12 @@
+# This file is ignored because it can contain sensitive data (JIRA domain,
+# login username and API authentication token. To recreate it, check the
+# source code of /config/auth.yml.template
+/config/auth.yml
+
+# Clone this folder from https://github.com/DeloitteDigitalUK/jira-agile-metrics
+# or somewhere else you have it forked in case you are looking into contributing
+# to the codebase
+/jira-agile-metrics
+
+# virtualenv folder (in case you use it to handle dependencies)
+/venv

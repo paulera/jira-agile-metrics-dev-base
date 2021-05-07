@@ -1,0 +1,18 @@
+# This file contains your authentication details.
+# Create a copy of this file, rename it to auth.yml and
+# fill in your details/
+# 
+#
+# Domain: open jira, copy the url of the domain (everything before
+#         the first slash "/") and write it there
+# Username: your login email
+# Password: THIS IS NOT YOUR LOGIN PASSOWRD! This is an API token
+#           that you can generate (and revoke if needed) at
+#           https://id.atlassian.com/manage-profile/security/api-tokens
+#
+# All params are written without quotes
+
+Connection:
+    Domain: domain of your jira instance
+    Username: youremail@gig.com
+    Password: write your api token here

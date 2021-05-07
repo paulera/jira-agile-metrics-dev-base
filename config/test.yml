@@ -1,0 +1,13 @@
+Extends: common.yml #uses common.yml as a base file. Do NOT remove this line.
+
+#What issues to search for. Uses JQL syntax. Modify this according to your team
+#>>>>>>>MODIFY THE BELOW ACCORDING TO THE TEAM NEEDED<<<<<<<<
+Query: project = AGILE
+
+Output:
+   
+    # Generates the Throughput chart
+    Throughput chart title: Throughput Trend (last 3 months)
+    Throughput chart: throughput.png
+    Throughput frequency: 1W-MON #The frequency can be set here
+    Throughput window: 12 #Shows last X weeks. E.g. if number 2 is set, shows only data for the last 2 weeks.

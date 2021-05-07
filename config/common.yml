@@ -1,0 +1,26 @@
+Extends: auth.yml #uses auth.yml as a base file. Do NOT remove this line.
+
+#Mapping the workflows to a single state. Useful when having a JIRA with multiple statuses that mean the same thing across teams.
+Workflow: 
+    To Do: 
+        - To Do
+        - Reopened
+    In Progress: In Progress
+    Review:
+        - Ready for Review
+        - Peer Review
+        - In Peer Review
+        - In Review
+        - Needs Peer Review
+        - Review
+    Testing:
+        - In Testing
+        - Ready for Test
+    UAT:
+        - In UAT
+        - Ready for UAT
+    Done: 
+        - Done
+        - Closed
+        - Rejected
+        - Resolved
