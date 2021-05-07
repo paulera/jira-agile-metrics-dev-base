@@ -1,1 +1,0 @@
-jira-agile-metrics/requirements.txt
